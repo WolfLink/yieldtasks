@@ -27,7 +27,7 @@ class TaskQueue():
             resumedtask.waiting_count += 1
 
     def pop(self):
-        return self.queue.pop(0)
+        return self.queue.pop()
 
     def store_task_output(self, output, task):
         if task.waiting_id in self.datastore:
